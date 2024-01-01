@@ -1,0 +1,90 @@
+/* 
+    O align-self serve para definirmos o alinhamento específico de um único flex item dentro
+     do nosso container. Caso um valor seja atribuído, ele passara por cima
+      do que for atribuído no align-items do container.
+
+    Vale lembrar que o alinhamento acontece tanto em linha quanto em colunas. 
+    Por exemplo o flex-start quando os itens estão em linhas, alinha o item ao topo da sua linha. 
+    Quando em colunas, alinha o item ao início (esquerda) da coluna.
+*/
+
+/* 
+    align-self: auto;
+    -> Valor inicial padrão. Vai respeitar o que for definido pelo align-items no flex-container.
+    
+    align-self: flex-start;
+    - Alinha o item ao início.
+    
+    align-self: flex-end;
+    -> Alinha o item ao final.
+    
+    align-self: center;
+    -> Alinha o item ao centro.
+    
+    align-self: baseline;
+    -> Alinha o item a linha de base.
+    
+    align-self: stretch;
+    -> Estica o item. 
+*/
+
+.flex-start {
+    align-self: flex-start;
+}
+  ​
+.flex-end {
+    align-self: flex-end;
+}
+  ​
+.center {
+    align-self: center;
+}
+  ​
+.baseline {
+    align-self: baseline;
+}
+  ​
+.stretch {
+    align-self: stretch;
+}
+  ​
+.align-items {
+    align-items: flex-end;
+}
+  ​
+.item {
+    flex: 1;
+    margin: 5px;
+    padding: 0 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+  ​
+.item:first-child {
+    padding-top: 20px;
+}
+  ​
+  /* Flex Container */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ccc;
+}
+  ​
+.column {
+    flex-direction: column;
+}
+  ​
+h1 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+  ​
+body {
+    font-family: monospace;
+    color: #333;
+}

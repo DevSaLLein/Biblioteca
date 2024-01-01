@@ -1,0 +1,9 @@
+
+Nome do aluno: Isaac
+Nota: 10
+Nome do aluno: Henry
+Nota: 0
+Nome do aluno: Yssa
+Nota: 10
+
+A média da turma é: 6.666666666666667

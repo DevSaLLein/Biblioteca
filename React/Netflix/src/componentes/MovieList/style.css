@@ -1,0 +1,30 @@
+.movies{
+    margin-bottom: 30px;
+}
+
+.movies h2{
+    margin: 0 0 0 30px;
+}
+
+.movies__container{
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+.movies__view{
+}
+
+.movies-infos{
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+
+.movies-infos img{
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.3s;
+}
+
+.movies-infos img:hover{
+    transform:  scale(1);
+}

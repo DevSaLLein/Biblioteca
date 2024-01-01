@@ -1,0 +1,63 @@
+/* 
+
+    Static: Posição padrão dos elementos;
+    Relative: Posição que podemos modifica as direções;
+    Absolute: Pode se referenciar pela tela ou por algum elemento;
+    Fixed: Posição que fixa o elemento na tela;
+    Sticky: Uma mistura de fixed com relative;
+
+*/
+html {
+    padding-bottom: 2000px;
+}
+
+.static {
+    position: static;
+    background-color: wheat;
+    margin: 10px;
+    border: 1px solid #686767
+}
+
+.relative {
+    position: relative;
+    background-color: blueviolet;
+    margin: 10px;
+    border: 1px solid pink;
+
+    /* Propriedades exclusivas do Relative */
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px
+}
+
+
+.absolute {
+    position: absolute;
+    background-color: #686767;
+    top: 10px;
+    right: 10px;
+}
+
+.fixed {
+    position: fixed;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    top:0;
+    right: 50%;
+}
+
+.sticky {
+    position: sticky;
+    width: 100px;
+    background-color: aqua;
+    top: 0px;
+    border: 1px solid navy;
+    text-align: center;
+}
+
+
+.preenchimento {
+    background-color: azure;
+    height: 2000px;
+}
