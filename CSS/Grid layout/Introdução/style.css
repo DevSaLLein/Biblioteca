@@ -1,0 +1,56 @@
+#container {
+    width: 100%;
+    height: 100dvh;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: 300px 300px 300px;
+
+    /* eixo Y */
+    align-items: center;
+
+    /* eito X */
+    justify-content: center;
+
+    /* Colums x Rows */
+    grid-template-areas: 
+        "green yellow"
+        "red red"
+        "blue none"
+    ;
+
+    gap: 1px;
+    background-color: pink;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+}
+
+#red {
+    background-color: red;
+    grid-area: red;
+
+    width: 500px;
+}
+
+#blue {
+    background-color: blue;
+    grid-area: blue;
+}
+
+#green {
+    background-color: green;
+    grid-area: green;
+
+    /* Permite decidir qual linha e qual columa vai estar o elemento */
+    /* grid-row: 1;
+    grid-column: 1; */
+}
+
+#yellow {
+    background-color: yellow;
+    grid-area: yellow;
+}
